@@ -5,7 +5,7 @@ function getmenu(){
     var ordered_list="<ol class='menulist'>";
     pizza_array.sort();
 
-    for(var i=0; i<ordered_list.length; i++){
+    for(var i=0; i<pizza_array.length; i++){
      ordered_list=ordered_list+"<li>"+pizza_array[i]+"</li>";
     }
 ordered_list+="</ol>";
@@ -19,7 +19,7 @@ function add_item(){
     pizza_array.sort();
 
     var ordered_list="<section class='card'>";
-    for(var i=0; i<ordered_list.length; i++){
+    for(var i=0; i<pizza_array.length; i++){
         ordered_list=ordered_list+"<div class='card'><img src='pizzaImg.png'>"+pizza_array[i]+"</div>";
        }
    ordered_list+="</section>";
